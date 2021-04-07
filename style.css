@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/*
+Theme Name:wp-tes
+Theme URL: テーマのサイトのURL
+Description: テーマの説明
+Author: テーマの作者
+Version: テーマのバージョン
+Tags: テーマの特徴を表すタグ（カンマ区切り/オプション）
+License: テーマのライセンス
+License URI: テーマのライセンスのURL
+*/
+
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+body {
+
+}
+
+a {
+    text-decoration: none;
+}
+header {
+  background-color: white;
+}
+
+
+.header-nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 75%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(253, 252, 252, 0.8);
+}
+.header-nav li {
+  list-style: none;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.header-nav li a {
+  color: black;
+}
+
+.top {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+.top-bg {
+  background: url(img/no-image.jpeg)no-repeat;
+  background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    z-index: -5;
+}
+
+.show .top-bg {
+  opacity: 1;
+}
+
+.name {
+  padding-top: 300px;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.creativ {
+  padding: 30px 0;
+}
+
+.en {
+  padding-bottom: 300px;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 50px 15% 50px 15%;
+  margin: 0 auto;
+  background-color: cyan;
+  z-index: -4;
+}
+
+.myphoto {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.mytitle {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.myname {
+  padding: 30px 0;
+}
+
+.from {
+  padding-bottom: 30px;
+}
+
+.self {
+  line-height: 20px;
+}
+
+#skill {
+   text-align: center;
+   
+}
+
+.skill-bg {
+  background: url(img/computer.jpeg)no-repeat;
+  background-size: cover;
+   position: fixed;
+   top: 10px;
+    
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    transition: all 0.5s ease 0s;
+    z-index: -3;
+}
+
+
+
+.skill-title {
+  font-size: 35px;
+  color: white;
+  font-weight: normal;
+  padding: 20px;
+}
+
+.skills {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.skill-child {
+  width: 30%;
+}
+
+.skill-name {
+  font-size: 35px;
+  color: white;
+}
+
+.skill-text {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.fa-code {
+  color: red;
+  font-size: 60px;
+}
+
+.fa-wordpress {
+  font-size: 60px;
+}
+
+#service {
+  text-align: center;
+  background-color: white;
+}
+
+.service-content {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.service-title {
+  font-size: 35px;
+  font-weight: normal;
+  padding: 30px 0;
+}
+
+.service-text {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0 0 30px;
+}
+
+.service-text p {
+  font-size: 17px;
+  padding: 10px 0;
+}
+
+.service-name {
+  border-bottom: gray 1px solid;
+  font-size: 20px;
+}
+
+.service-name span {
+  color: rgb(221, 77, 20);
+}
+
+.word {
+  padding: 20px 0;
+}
+*{
+   outline: red 1px solid !important;
+}
