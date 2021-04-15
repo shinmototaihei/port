@@ -386,6 +386,7 @@ header {
 
 .work-img {
   width: 100%;
+  height: 100%;
 }
 
 .work-view {
@@ -558,6 +559,10 @@ header {
 
   .myphoto {
     width: 100%;
+  }
+
+  #skill {
+    background-size: auto;
   }
 
   .skills {
