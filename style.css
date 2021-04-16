@@ -230,7 +230,6 @@ header {
    text-align: center;
    background: url(img/computer.jpeg)no-repeat fixed center center /cover;
    top: 10px;
-
     width: 100%;
     background-position: center;
     transition: all 0.5s ease 0s;
@@ -560,15 +559,15 @@ header {
     width: 100%;
   }
 
-  #skill {
+  #skill ::before{
     background-size: auto;
     text-align: center;
-   background: url(img/computer.jpeg)no-repeat;
-  background-size: cover;
-   top: 10px;
-    background-attachment: fixed;
+    position: fixed;
+    content: "";
+    height: 100%;
+    top: 10px;
     width: 100%;
-    background-position: center;
+    background-position: center center;
     transition: all 0.5s ease 0s;
     z-index: -3;
   }
