@@ -228,9 +228,10 @@ header {
 
 #skill {
    text-align: center;
-   background: url(img/computer.jpeg)no-repeat fixed center center /cover;
+   background: url(img/computer.jpeg)no-repeat;
    top: 10px;
     width: 100%;
+    background-attachment: fixed;
     background-position: center;
     transition: all 0.5s ease 0s;
     z-index: -3;
@@ -559,17 +560,14 @@ header {
     width: 100%;
   }
 
-  #skill ::before{
+  #skill {
     background-size: auto;
     text-align: center;
-    position: fixed;
-    content: "";
+    
+    
     height: 100%;
     top: 10px;
     width: 100%;
-    background-position: center center;
-    transition: all 0.5s ease 0s;
-    z-index: -3;
   }
 
   .skills {
