@@ -563,10 +563,12 @@ header {
     position: fixed;
     background-repeat: no-repeat;
     background-size: auto;
+    background-position: center center;
     height: 100%;
     top: 10px;
     width: 100%;
     content: "";
+    z-index: -3;
   }
 
   
