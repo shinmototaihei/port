@@ -228,10 +228,9 @@ header {
 
 #skill {
    text-align: center;
-   background: url(img/computer.jpeg)no-repeat;
+   background: url(img/computer.jpeg)no-repeat fixed center center /cover;
    top: 10px;
     width: 100%;
-    background-attachment: fixed;
     background-position: center;
     transition: all 0.5s ease 0s;
     z-index: -3;
@@ -360,9 +359,7 @@ header {
 
 #works {
   text-align: center;
-  background: url(img/wallpaper-keyboard-photo-01.jpeg)no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(img/wallpaper-keyboard-photo-01.jpeg)no-repeat fixed center center /cover;
   color: white;
   padding: 50px 0;
 }
@@ -560,14 +557,24 @@ header {
     width: 100%;
   }
 
-  #skill {
+  #skill::before{
     background-size: auto;
-    text-align: center;
-    
-    
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
     height: 100%;
     top: 10px;
     width: 100%;
+    content: "";
+  }
+
+  
+
+  #skill.bgA::before {
+    background: url(img/computer.jpeg);
+  }
+  #skill.bgB::before {
+    background: url(img/wallpaper-keyboard-photo-01.jpeg);
   }
 
   .skills {
