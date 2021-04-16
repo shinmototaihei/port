@@ -229,6 +229,7 @@ header {
 #skill {
    text-align: center;
    background: url(img/computer.jpeg)no-repeat fixed center center /cover;
+   background-size: cover;
    top: 10px;
     width: 100%;
     background-position: center;
