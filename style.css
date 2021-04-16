@@ -347,6 +347,8 @@ header {
 .service-name {
   border-bottom: gray 1px solid;
   font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 .service-name span {
@@ -354,7 +356,7 @@ header {
 }
 
 .word {
-  padding: 20px 0;
+  padding-bottom: 40px;
   font-size: 12px;
 }
 
