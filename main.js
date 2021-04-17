@@ -93,4 +93,3 @@ $("#hamburger").click(function () {
             }
           }
       });
-

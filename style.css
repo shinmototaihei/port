@@ -120,6 +120,9 @@ input, select {
 body {
 
 }
+ 
+ 
+ 
 
 a {
     text-decoration: none;
@@ -231,7 +234,6 @@ header {
    background-size: cover;
    top: 10px;
     width: 100%;
-    height: 100vh;
     background-position: center;
     transition: all 0.5s ease 0s;
 }
@@ -497,18 +499,21 @@ header {
     display: none;
 }
 
-  @media screen and (min-width: 737px) {
+ @media screen and (min-width: 737px) {
     /* PCの場合の背景画像 */
     #skill {
      background: url(img/computer.jpeg)no-repeat fixed center center /cover;
     }
     #works {
-     background: url("img/wallpaper-keyboard-photo-01.jpeg") no-repeat fixed center center /cover;
+     background: url(img/wallpaper-keyboard-photo-01.jpeg) no-repeat fixed center center /cover;
     }
   }
 
+ 
+
 @media screen and (max-width: 768px) {
 
+   
     .menu-content2{
     display: block;
     width: calc(50%);
@@ -585,10 +590,12 @@ header {
   
 
   #skill.bgA::before {
-    background: url("img/computer.jpeg");
+    background: url("img/computer.jpeg")no-repeat;
+    background-size: cover;
   }
   #skill.bgB::before {
-    background: url("img/wallpaper-keyboard-photo-01.jpeg");
+    background: url("img/wallpaper-keyboard-photo-01.jpeg")no-repeat;
+    background-size: cover;
   }
 
   .skills {
